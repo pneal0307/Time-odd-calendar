@@ -1,0 +1,40 @@
+DROP DATABASE IF EXISTS calendar;
+CREATE DATABASE calendar;
+USE calendar;
+
+CREATE TABLE TimeOff (
+    Date VARCHAR(10) NOT NULL UNIQUE,
+    PercentageOfWorkForceOff DECIMAL(10 , 2 ) NOT NULL
+);
+
+INSERT INTO TimeOff VALUES
+(1, 'Wednesday June 1', '25%'),
+(2, 'Thursday June 2', '25%'),
+(3, 'Friday June 3', '25%'),
+(4, 'Saturday June 4', '100%'),
+(5, 'Sunday June 5', '100%'),
+(6, 'Monday June 6', '25%'),
+(7, 'Tuesday June 7', '25%'),
+(8, 'Wednesday June 8', '25%'),
+(9, 'Thursday June 9', '25%'),
+(10, 'Friday June 10', '25%'),
+(11, 'Saturday June 11', '100%'),
+(12, 'Sunday June 12', '100%'),
+(13, 'Monday June 13', '25%'),
+(14, 'Tuesday June 14', '25%'),
+(15, 'Wednesday June 15', '25%'),
+(16, 'Thursday June 16', '25%'),
+(17, 'Friday June 17', '30%'),
+(18, 'Saturday June 18', '100%'),
+(19, 'Sunday June 19', '100%'),
+(20, 'Monday June 20', '30%'),
+(21, 'Tuesday June 21', '25%'),
+(22, 'Wednesday June 22', '25%'),
+(23, 'Thursday June 23', '25%'),
+(24, 'Friday June 24', '25%'),
+(25, 'Saturday June 25', '100%'),
+(26, 'Sunday June 26', '100%'),
+(27, 'Monday June 27', '25%'),
+(28, 'Tuesday June 28', '25%'),
+(29, 'Wednesday June 29', '25%'),
+(30, 'Thursday June 30', '30%');
